@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content='ie-edge'>
+
+  <!--SEO-->
+  <title>Original Trombones</title>
+  <meta name='description' content="A project by Mihail. Uses HTML, CSS, jQuery, Bootstrap.">
+  <meta name='keywords' content='original, trombones, freecodecamp, fcc, html, css, jquery, javascript, bootstrap, js'>
+  <meta name='author' content='Mihail Marian'>
+
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+  <!--Google Font for Montserrat font we'll be using-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!--Font awesome-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!--Custom stylesheet-->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--favicon-->
+  <link rel="shortcut icon" href="img/trombone_favicon.png">
+
+</head>
+<body>
+  <header>
+    <!----------------TOP BAR------------------->
+    <section class="top-bar">
+      <!--if you want it to take full width you use .container-fluid-->
+      <div class="container h-100 d-flex flex-row justify-content-end">
+        <a href='tel:07324244249' class="h-100 flex-row-center px-3 transition">
+            <span>Call us at 0732 424 4249</span>
+        </a>
+      </div>
+    </section>
+    <!----------------END OF TOP BAR------------------->
+
+    <!----------------NAV BAR------------------->
+    <nav class="navbar navbar-light navbar-expand-md p-0">
+      <div class="p-0 container-fluid d-flex align-items-stretch">
+
+        <a href="index.html" class="py-2 flex-row-center transition col-lg-3 col-md-5 col-sm-6 col-9">
+          <img class="w-100" src="img/navbar_logo_2.png" alt="Original Trombones" title="Original Trombones">
+        </a>
+        
+        <button class="navbar-toggler m-2" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto h-100">
+            <li class="nav-item"><a class='nav-link transition h-100 flex-row-center justify-content-end px-4' href="#feature-list"><span>Features</span></a></li>
+            <li class="nav-item"><a class='nav-link transition h-100 flex-row-center justify-content-end px-4' href="#video-section"><span>How it works</span></a></li>
+            <li class="nav-item"><a class='nav-link transition h-100 flex-row-center justify-content-end px-4' href="#pricing"><span>Pricing</span></a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+    <!----------------END OF NAV BAR------------------->
+  </header>
+
+  <main>
+
+    <!----------------HEADING-------------------------->
+    <section class="text-center pt-sm-2 container">
+      <h2 class="font-weight-bold mt-5">Handcrafted, home-made masterpieces</h2>
+    </section>
+
+    <!----------------FEATURES------------------------->
+    <section id="feature-list" class="container pt-5 pb-md-0 pb-3">
+      <div>
+        <h4 class="font-weight-bold">
+          Premium materials
+        </h4>
+        <p>
+          Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.
+        </p>
+      </div>
+      <div>
+        <h4 class="font-weight-bold">
+          Fast shipping
+        </h4>
+        <p>
+          We make sure you receive your trombone as soon as we finish making it. We also provide free returns if you are not satisfied.
+        </p>
+      </div>
+      <div>
+        <h4 class="font-weight-bold">
+          Quality assurance
+        </h4>
+        <p>
+          For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.
+        </p>
+      </div>
+    </section>
+    <!-----------------END OF FEATURES---------->
+
+    <!------------------HOW IT WORKS------------->
+    <section id="video-section" class="container py-md-5">
+      <div class="row d-flex flex-row justify-content-center">
+        <div class="col-lg-8">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------------------PRICING--------------------------------->
+    <section id="pricing" class="container mt-4">
+      <div class="row d-flex flex-row justify-content-center">
+        <div class="option-column col-md-4 my-4">
+          <div class="option-wrapper">
+            <div class="option-heading p-2 font-weight-bold text-center">
+              TENOR TROMBONE
+            </div>
+            <div class="text-center option-features pt-3 pb-1">
+              <h4 class="font-weight-bold mb-3">£ 500</h4>
+              <ul class="pl-0">
+                <li>Lorem ipsum dolor sit</li>
+                <li>Facilisis varius dapibus</li>
+                <li>Nunc risus mi</li>
+                <li>Elit sit amet rhoncus</li>
+              </ul>
+              <button type="button" data-toggle="modal" data-target="#orderModal" value="tenor" class="custom-button font-weight-bold btn py-2 px-4 mb-3">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="option-column col-md-4 my-4">
+          <div class="option-wrapper">
+            <div class="option-heading p-2 font-weight-bold text-center">
+              BASS TROMBONE
+            </div>
+            <div class="text-center option-features pt-3 pb-1">
+              <h4 class="font-weight-bold mb-3">£ 800</h4>
+              <ul class="pl-0">
+                <li>Lorem ipsum dolor sit</li>
+                <li>Facilisis varius dapibus</li>
+                <li>Nunc risus mi</li>
+                <li>Elit sit amet rhoncus</li>
+              </ul>
+              <button type="button" data-toggle="modal" data-target="#orderModal" value="bass" class="custom-button font-weight-bold btn py-2 px-4 mb-3">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="option-column col-md-4 my-4">
+          <div class="option-wrapper">
+            <div class="option-heading p-2 font-weight-bold text-center">
+              VALVE TROMBONE
+            </div>
+            <div class="text-center option-features pt-3 pb-1">
+              <h4 class="font-weight-bold mb-3">£ 1,200</h4>
+              <ul class="pl-0">
+                <li>Lorem ipsum dolor sit</li>
+                <li>Facilisis varius dapibus</li>
+                <li>Nunc risus mi</li>
+                <li>Elit sit amet rhoncus</li>
+              </ul>
+              <button type="button" data-toggle="modal" data-target="#orderModal" value="valve" class="custom-button font-weight-bold btn py-2 px-4 mb-3">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!--------------END OF PRICING----------------->
+
+    <!---------------PRICING MODAL------------------>
+    <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title font-weight-bold" id="exampleModalLongTitle">Complete your order</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          
+          <form>
+            <div class="modal-body">
+
+              <!----TENOR TROMBONE----->
+              <div id="tenor-group" class="form-group row">
+
+                <label for="tenor-number" class="col-sm-5 col-8 order-sm-0 order-0 mb-0 flex-row-center">
+                  Tenor Trombone
+                </label>
+
+                <div class="col-sm-4 order-sm-1 order-2 input-group mt-sm-0 mt-2">
+                  <div class="input-group-prepend">
+                    <button type="button" class="btn btn-primary quantity-button d-flex flex-row justify-content-center align-items-center font-weight-bold p-0">-</button>
+                  </div>
+                  <input class="form-control text-center font-weight-bold" id="tenor-number" name="tenor-number" min="0" value="0" type="number" disabled>
+                  <div class="input-group-append">
+                    <button type="button" class="btn btn-primary quantity-button d-flex flex-row justify-content-center align-items-center font-weight-bold p-0">+</button>
+                  </div>
+                </div>
+
+                <div class="subtotal col-sm-3 col-4 d-flex flex-row justify-content-end align-items-center order-sm-2 order-1"
+                value="0"></div>
+
+              </div>
+              <!----END OF TENOR TROMBONE----->
+
+              <!----BASS TROMBONE----->
+              <div id="bass-group" class="form-group row">
+
+                <label for="bass-number" class="col-sm-5 col-8 order-sm-0 order-0 mb-0 flex-row-center">
+                  Bass Trombone
+                </label>
+
+                <div class="col-sm-4 order-sm-1 order-2 input-group mt-sm-0 mt-2">
+                  <div class="input-group-prepend">
+                    <button type="button" class="btn btn-primary quantity-button d-flex flex-row justify-content-center align-items-center font-weight-bold p-0">-</button>
+                  </div>
+                  <input class="form-control text-center font-weight-bold" id="bass-number" name="bass-number" min="0" value="0" type="number" disabled>
+                  <div class="input-group-append">
+                    <button type="button" class="btn btn-primary quantity-button d-flex flex-row justify-content-center align-items-center font-weight-bold p-0">+</button>
+                  </div>
+                </div>
+                
+                <div class="subtotal col-sm-3 col-4 d-flex flex-row justify-content-end align-items-center order-sm-2 order-1"
+                value="0"></div>
+
+              </div>
+              <!----END OF BASS TROMBONE----->
+
+              <!----VALVE TROMBONE----->
+              <div id="valve-group" class="form-group row">
+
+                <label for="valve-number" class="col-sm-5 col-8 mb-0 flex-row-center order-sm-0 order-0">
+                  Valve Trombone
+                </label>
+
+                <div class="col-sm-4 order-sm-1 order-2 input-group mt-sm-0 mt-2">
+                  <div class="input-group-prepend">
+                    <button type="button" class="btn btn-primary quantity-button d-flex flex-row justify-content-center align-items-center font-weight-bold p-0">-</button>
+                  </div>
+                  <input class="form-control text-center font-weight-bold" id="valve-number" name="valve-number" min="0" value="0" type="number" disabled>
+                  <div class="input-group-append">
+                    <button type="button" class="btn btn-primary quantity-button d-flex flex-row justify-content-center align-items-center font-weight-bold p-0">+</button>
+                  </div>
+                </div>
+
+                <div class="subtotal col-sm-3 col-4 d-flex flex-row justify-content-end align-items-center order-sm-2 order-1"
+                value="0"></div>
+
+              </div>
+              <!----END OF VALVE TROMBONE----->
+              
+              <!--------------TOTAL-------------->
+              <div class="row mt-sm-5 mt-2">
+                <div class="col-sm-4 col-0"></div>
+                <div class="col-sm-4 col-6 text-sm-right text-left font-weight-bold">TOTAL</div>
+                <div id="total" class="col-sm-4 col-6 text-right font-weight-bold"></div>
+              </div>
+              <!--------------END OF TOTAL-------------->
+
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" data-dismiss="modal" class="btn btn-primary font-weight-bold py-sm-2 py-3 px-4">Checkout</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!---------------PRICING MODAL------------------>
+
+    <!--------------NEWSLETTER------------------>
+    <section id="newsletter" class="container text-center py-md-5 py-4">
+      <div id="unsubscribed">
+        <h3 class="font-weight-bold">Subscribe to our newsletter to get 10% off your next purchase</h3>
+        <form id="newsletter-form">
+          <div class="form-row mt-4 d-flex flex-row justify-content-center">
+            <input type="email" class="form-control text-center mr-sm-3 mb-sm-0 mb-2 col-md-6 col-sm-8" placeholder="Enter your email">
+            <button type="submit" class="btn custom-button font-weight-bold px-4 col-sm-3 col-md-2">
+              Submit
+            </button>
+          </div>  
+        </form>
+      </div>
+      <div id="subscribed" class="d-flex flex-row justify-content-center">
+        <div class="col-lg-6 col-md-10 col-12 d-flex flex-row align-items-center">
+          <p class="m-0 py-2 font-weight-bold">Thank you for subscribing! You should receive an email with the discount code in the next 5 minutes.</p>
+        </div>
+      </div>
+    </section>
+    <!-----------------END OF NEWSLETTER---------->
+
+  </main>
+
+  <!------------------FOOTER------------------>
+  <footer class="p-0">
+    <div class="row">
+      <div id="copyright" class="col-sm-4 order-sm-1 order-2 p-3 p-sm-0 flex-row-center">
+        <div class="container text-center text-sm-left ml-sm-3">
+          <span class="d-inline-block">Copyright 2020, </span>
+          <span class="d-inline-block">Original Trombones</span>
+        </div>
+      </div>
+      <div class="col-sm-8 order-sm-2 order-1 d-flex flex-sm-row justify-content-sm-end flex-column">
+        <a class="footer-link transition p-3 text-center" href="#feature-list">Features</a>
+        <a class="footer-link transition p-3 text-center" href="#video-section">How it works</a>
+        <a class="footer-link transition p-3 text-center" href="#pricing">Pricing</a>
+      </div>
+    </div>
+  </footer>
+
+  <!--JS files...-->
+  <!-- jQuery and JS bundle w/ Popper.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+  <!--custom JS--->
+  <script src="js/custom.js"></script>
+</body>
+</html>

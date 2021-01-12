@@ -1,0 +1,222 @@
+/*----COMMON STYLES-----*/
+:root {
+  --main-gold:  hsla(53, 35%, 73%, 1);
+  --main-gray:  hsla(8, 10%, 84%, 1);
+  --main-black: hsla(200, 3%, 22%,1);
+  --main-red: hsla(3, 86%, 64%,1);
+  --main-green: hsla(173, 70%, 35%,1); 
+}
+
+.transition {
+  transition: 0.3s;
+}
+
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  /*prevents any horizontal scrolling*/
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  background: var(--main-gray);
+}
+
+/*-----TOP BAR------------*/
+.top-bar {
+  height: 3rem;
+  background: var(--main-black);
+}
+
+.top-bar a {
+  color: var(--main-gray);
+  text-decoration: none;
+}
+
+.top-bar a:hover {
+  background: var(--main-gold);
+  color: var(--main-black);
+}
+
+/*--------NAV BAR----------*/
+nav {
+  box-shadow: 0 .5rem .5rem rgba(0,0,0,.1);
+  z-index: 1;
+}
+
+nav a:hover {
+  background: var(--main-gold);
+} 
+
+/*------PRICING----------*/
+.option-column {
+  max-width: 18rem;
+}
+
+.option-wrapper {
+  outline: var(--main-black) solid 0.1rem;
+}
+
+.option-heading {
+  background: var(--main-green);
+  color: var(--main-gold);
+  font-size: 1.2rem;
+  letter-spacing: .1rem;
+}
+
+.custom-button {
+  background: var(--main-black);
+  color: var(--main-gold);
+}
+
+.custom-button:hover {
+  background: var(--main-green);
+  color: var(--main-gold);
+}
+
+.option-features > ul {
+  list-style-type: none;
+}
+
+/*--------------MODAL----------------------*/
+.modal-header {
+  background: var(--main-black);
+  color: var(--main-gold);
+}
+
+button.close, button.close:hover {
+  color: var(--main-gold);
+}
+
+.modal-footer {
+  background: var(--main-gray);
+}
+
+.modal-footer>button {
+  background: var(--main-green);
+  color: var(--main-gold);
+  border: var(--main-green);
+}
+
+.modal-footer>button:hover {
+  background: var(--main-gold);
+  color: var(--main-green);
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.quantity-button {
+  width: 2.5rem;
+  background: var(--main-gray);
+  font-size: 1.5rem;
+  color: var(--main-black);
+  border: 0;
+}
+
+.quantity-button:hover, .quantity-button:focus, .quantity-button:active, .quantity-button:target {
+  background: var(--main-gold) !important;
+  color: var(--main-green) !important;
+}
+
+
+/*-----------NEWSLETTER--------------------*/
+
+input:focus {
+  box-shadow: 0 0 8px var(--main-green) !important;
+  border: var(--main-green); 
+}
+
+#subscribed > div {
+  background: var(--main-green);
+  color: var(--main-gold);
+}
+
+#subscribed > div > p {
+  display: none;
+}
+
+/*--------------FOOTER----------------------*/
+footer {
+  background: var(--main-black);
+  color: var(--main-gray);
+}
+
+#copyright {
+  font-size: 0.8rem;
+}
+
+.footer-link {
+  color: var(--main-gray);
+}
+
+.footer-link:hover {
+  text-decoration: none;
+  color: var(--main-black);
+  background: var(--main-gold);
+}
+/*-------------RESPONSIVE-----------------*/
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+}
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+  }
+
+  .quantity-button {
+    width: 5rem;
+  }
+
+  #orderModal {
+    padding-right: 0px !important;
+  }
+
+  .subtotal {
+    padding-left: 0px !important;
+  }
+
+}
+
+
+
+/*-- Bootstrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
