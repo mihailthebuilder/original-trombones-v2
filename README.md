@@ -70,12 +70,12 @@ Achieved using Bootstrap's grid system, where you can set different column width
   <!--
     The name of product.
     Screen width...
-      ≥ 576px <=> class names...
-        col-sm-5 = takes 5/12 of a row
-        order-sm-0 = appears 1st in order.
-      < 576px <=> class names...
-        col-8 = takes 8/12 of a row
-        order-0 = still appears 1st in order.
+      ≥ 576px <=> 
+        .col-sm-5 = takes 5/12 of a row
+        .order-sm-0 = appears 1st in order.
+      < 576px <=>
+        .col-8 = takes 8/12 of a row
+        .order-0 = still appears 1st in order.
   -->
   <label for="tenor-number" class="col-sm-5 col-8 order-sm-0 order-0 mb-0 flex-row-center">
     Tenor Trombone
@@ -84,12 +84,12 @@ Achieved using Bootstrap's grid system, where you can set different column width
   <!--
     Quantity with increment & decrement buttons.
     Screen width...
-      ≥ 576px <=> class names...
-        col-sm-4 = takes 4/12 of a row
-        order-sm-1 = appears after product name
-      < 576px <=> class names...
-        [no col-x] = takes entire row
-        order-2 = appears last in the grouping 
+      ≥ 576px <=>
+        .col-sm-4 = takes 4/12 of a row
+        .order-sm-1 = appears after product name
+      < 576px <=>
+        [no .col-{x}] = takes entire row
+        .order-2 = appears last in the grouping 
   -->
   <div class="col-sm-4 order-sm-1 order-2 input-group mt-sm-0 mt-2">
     <div class="input-group-prepend">
@@ -104,12 +104,12 @@ Achieved using Bootstrap's grid system, where you can set different column width
   <!--
     Quantity with increment & decrement buttons.
     Screen width...
-      ≥ 576px <=> class names...
-        col-sm-3 = takes 3/12 of a row
-        order-sm-2 = appears last in the row, after quantity element
-      < 576px <=> class names...
-        order-1 = appears after product name but before quantity element
-        col-4 = takes 4/12 of a row
+      ≥ 576px <=>
+        .col-sm-3 = takes 3/12 of a row
+        .order-sm-2 = appears last in the row, after quantity element
+      < 576px <=>.
+        .order-1 = appears after product name but before quantity element
+        .col-4 = takes 4/12 of a row
   -->
   <div class="subtotal col-sm-3 col-4 d-flex flex-row justify-content-end align-items-center order-sm-2 order-1"
   value="0"></div>
@@ -119,3 +119,53 @@ Achieved using Bootstrap's grid system, where you can set different column width
 This is the visual result:
 ![responsive-2](./demo/responsive_2.gif)
 
+### Hamburger menu for mobile
+![hamburger](./demo/hamburger.gif)
+Made with Bootstrap:
+```html
+<!-- .navbar-expand-md = the navbar links should only 
+be visible once screen width ≥ 576px-->
+<nav class="navbar navbar-light navbar-expand-md p-0">
+  <div class="p-0 container-fluid d-flex align-items-stretch">
+
+    <a href="index.html" class="py-2 flex-row-center transition col-lg-3 col-md-5 col-sm-6 col-9">
+      <img class="w-100" src="img/navbar_logo_2.png" alt="Original Trombones" title="Original Trombones">
+    </a>
+    
+    <!--
+    .navbar-toggler tells Bootstrap this is the
+      button that will toggle the visibility of the navigation links
+    [data-target="#navbarResponsive"] points to the id of the
+      nav links containter that should be shown once clicked
+    -->
+    <button class="navbar-toggler m-2" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!--
+    .collapse.navbar-collapse tells Bootstrap
+      this is the navbar wrapper that will be visible/invisible
+    -->
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto h-100">
+        <li class="nav-item"><a class='nav-link transition h-100 flex-row-center justify-content-end px-4' href="#feature-list"><span>Features</span></a></li>
+        <li class="nav-item"><a class='nav-link transition h-100 flex-row-center justify-content-end px-4' href="#video-section"><span>How it works</span></a></li>
+        <li class="nav-item"><a class='nav-link transition h-100 flex-row-center justify-content-end px-4' href="#pricing"><span>Pricing</span></a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+``` 
+
+### Newsletter sign-up form
+![newsletter](./demo/newsletter.gif)
+A simple job with jQuery's `fadeIn` and `fadeOut` functions:
+```js
+/*when newsletter form submitted, replace element with confirmation
+and prevent page from being reloaded (default form submission behaviour)*/
+$("#newsletter-form").submit((event)=> {
+  event.preventDefault();
+  $("#unsubscribed").fadeOut(350,()=>{$("#subscribed>div>p").fadeIn(350)});
+});
+```
