@@ -1,7 +1,7 @@
 # Original Trombones
 
 ## Overview
-A static ecommerce landing page built with [Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/) and [jQuery](https://jquery.com/).
+A static ecommerce landing page built with [Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/) and [jQuery](https://jquery.com/). See it live [here](http://mihailthebuilder.github.io/original-trombones-v1).
 
 ## Highlights
 
