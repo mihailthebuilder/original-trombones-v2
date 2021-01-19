@@ -1,3 +1,11 @@
+- [Original Trombones](#original-trombones)
+  - [Overview](#overview)
+  - [Highlights](#highlights)
+    - [Pop-up checkout modal](#pop-up-checkout-modal)
+    - [Responsive across all devices](#responsive-across-all-devices)
+    - [Hamburger menu for mobile](#hamburger-menu-for-mobile)
+    - [Newsletter sign-up form](#newsletter-sign-up-form)
+
 # Original Trombones
 
 ## Overview
